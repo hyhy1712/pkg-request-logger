@@ -1,0 +1,27 @@
+{
+    "name": "hyhy/request-logger",
+    "description": "Hyhy package request logger",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hiep Tran",
+            "email": "hieptt95@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Hyhy\\RequestLogger\\": "src"
+        },
+        "files": [
+            "helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hyhy\\RequestLogger\\Providers\\HyhyRequestLoggerServiceProvider"
+            ]
+        }
+    }
+}
